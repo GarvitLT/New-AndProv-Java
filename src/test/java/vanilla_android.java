@@ -30,6 +30,7 @@ public class vanilla_android {
             capabilities.setCapability("console", true);
             capabilities.setCapability("network", false);
             capabilities.setCapability("visual", true);
+            capabilities.setCapability("autoGrantPermissions", true);
             capabilities.setCapability("devicelog", true);
 
             driver = new AppiumDriver(new URL("https://" +userName + ":" + accessKey + "@mobile-hub.lambdatest.com/wd/hub"), capabilities);
